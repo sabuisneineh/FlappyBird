@@ -20,8 +20,8 @@ flying = False
 game_over = False
 
 #load images
-bg = pygame.image.load('img/bg.png')
-ground_img = pygame.image.load('img/ground.png')
+bg = pygame.image.load('bg.png')
+ground_img = pygame.image.load('ground.png')
 
 
 class Bird(pygame.sprite.Sprite):
@@ -31,7 +31,7 @@ class Bird(pygame.sprite.Sprite):
 		self.index = 0
 		self.counter = 0
 		for num in range(1, 4):
-			img = pygame.image.load(f'img/bird{num}.png')
+			img = pygame.image.load(f'bird1.png')
 			self.images.append(img)
 		self.image = self.images[self.index]
 		self.rect = self.image.get_rect()
